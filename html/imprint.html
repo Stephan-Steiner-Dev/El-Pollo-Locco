@@ -18,11 +18,16 @@
         font-family: 'Chentenario';
         overflow-y: scroll;
         overflow-x: hidden;
+        display: flex;
+        justify-content: center;
     }
 
     .main {
-        overflow-y: scroll;
         overflow-x: hidden;
+        width: 100%;
+        max-width: 1440px;
+        height: 100vh;
+        position: relative;
     }
 
     @font-face {
@@ -87,12 +92,12 @@
         background-color: gold;
     }
 
-    @media only screen and (max-width: 720px) {
-        button {
-            bottom: 85%;
-            left: 74%;
+    @media only screen and (max-width: 480px) {
+        h2{
+            font-size: 18px;
         }
     }
+
 
     @media only screen and (max-height: 480px) {
         button {
@@ -107,13 +112,12 @@
         <h1 id="impressum-heading">Impressum</h1>
         <h2 id="m46">Diensteanbieter</h2>
         <p>Stephan Steiner</p>
-        <p>Brandenburgerstraße 1 </p>
-        <p>98765 Buxdehude</p>
+        <p>Feldbergtraße 17/1 </p>
+        <p>71088 Holzgerlingen</p>
         <p>Deutschland</p>
 
         <h2 id="m56">Kontaktmöglichkeiten</h2>
-        <p>E-Mail-Adresse: <a href="mailto:elPolloLoco@gmx.de">elPolloLoco@gmx.de</a></p>
-        <p>Telefon: 0123456789</p>
+        <p>E-Mail-Adresse: <a href="mailto:stephan-steiner-dev@protonmail.com">stephan-steiner-dev@protonmail.com</a></p>
 
         <p class="seal"></p>
         <button><a href="../index.html">zurück</a></button>
